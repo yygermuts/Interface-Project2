@@ -1,0 +1,561 @@
+body{
+    background-color: white;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    /*min-height: 3000px;
+    padding-top: 80px; /*<-- aqui eu havia colocado padding ao invés de padding-top
+    e isso estava ocasionando distâncias nos quatro cantos... Esse era o equivoco!*/
+}
+
+.container{
+    max-width: 1180px;
+    margin: auto; 
+    padding: 0 16px;
+    
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:  #ffffffe3;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.15);
+    width: 100%;
+    height: 80px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    
+  
+}
+
+
+
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header .logo{
+    display: inline-block;
+    font-size: 27px;
+
+    
+}
+
+header nav{
+    display: inline-block;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    color: #3E3E3E;
+    font-size: 15px;
+    letter-spacing: 0.37px;
+    margin-right: 24px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: #3E50E5;
+}
+
+.hero-content button:hover{
+    color:#3e50e5;
+    background-color: #FFF;
+    border: 1px solid #3e50e5;
+}
+
+header nav ul li:last-of-type a{
+    margin-right: 0;
+}
+
+section.logo img{
+    max-width: 100%;
+            height: auto;
+}
+
+
+section.hero img{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+    padding-top: 80px;
+    
+}
+
+div.hero-content{
+    text-align: center;
+}
+
+div.hero-content h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    letter-spacing: -3px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    font-weight: normal;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+
+div.hero-content p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div a button{
+    max-width: 100%;
+    height: 50px;
+    width: 220px;
+    padding: 15px 15px;
+    border-radius: 30px;
+    background-color: rgba(12, 57, 255, 0.658);
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+
+/*
+section.best-sellers{
+    padding-top: 80px;
+}
+
+section.best-sellers h2{
+text-align: center;
+font-weight: normal;
+font-size: 34px;
+line-height: 42px;
+margin: 0 0 14px 0;
+}
+
+section.best-sellers hr{
+    border-width: 5px;
+    border: none;
+    border-top: 5px solid #67F11D;
+    width: 66px;
+}
+
+section.best-sellers .product-slider{
+    margin-top: 76px;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8px;
+    
+}
+
+section.best-sellers .product-slider .product{
+
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 33%;
+    text-align: center;
+    margin: 0 8px;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.best-sellers .product-slider .product img{
+    max-width: 100%;
+}
+
+section.best-sellers .product-slider .product.new::before{
+    content: "New";
+    background-color: #EC1C1C;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: #FFFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+    list-style: 21px;
+    text-align: center;
+    padding: 6px 15px;
+    border-radius: 16px;
+}
+
+section.best-sellers .product-slider .product .product-info{
+    margin-top: 50px;
+}
+
+section.best-sellers .product-slider .product .product-info .categories{
+    color: #3E50E5;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.35px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+section.best-sellers .product-slider .product .product-info .title{
+    color: black;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.35px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 6px;
+    margin-top: 0;
+}
+
+section.best-sellers .product-slider .product .product-info .price{
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.35px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+section.best-sellers .product-slider .product .product-info button{
+    height: 50px;
+    width: 219.5px;
+    border-radius: 220px;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    border: 1px solid black;
+}
+
+section.best-sellers .product-slider .product span{
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 16px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 21px;
+
+
+}*/
+
+/* Geral */
+section.best-sellers {
+    padding-top: 80px;
+}
+
+section.best-sellers h2 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 42px;
+    margin: 0 0 14px 0;
+}
+
+section.best-sellers hr {
+    border-width: 5px;
+    border: none;
+    border-top: 5px solid #67F11D;
+    width: 66px;
+    margin: 0 auto;
+}
+
+section.best-sellers .product-slider {
+    margin-top: 76px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que os itens se quebrem em várias linhas */
+    padding: 0 8px;
+}
+
+section.best-sellers .product-slider .product {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: calc(33% - 16px); /* Espaço de margem entre os itens */
+    text-align: center;
+    margin: 8px; /* Espaço de margem entre os itens */
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box; /* Inclui o padding e border no tamanho total */
+}
+
+
+
+section.best-sellers .product-slider .product img {
+    max-width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+section.best-sellers .product-slider .product.new::before {
+    content: "New";
+    background-color: #EC1C1C;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: #FFFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+    list-style: 21px;
+    text-align: center;
+    padding: 6px 15px;
+    border-radius: 16px;
+}
+
+section.best-sellers .product-slider .product .product-info {
+    margin-top: 50px;
+}
+
+section.best-sellers .product-slider .product .product-info .categories {
+    color: #3E50E5;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.35px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+section.best-sellers .product-slider .product .product-info .title {
+    color: black;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.35px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 6px;
+    margin-top: 0;
+}
+
+section.best-sellers .product-slider .product .product-info .price {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.35px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+section.best-sellers .product-slider .product .product-info button {
+    height: 50px;
+    width: 100%;
+    max-width: 220px;
+    border-radius: 220px;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    border: 1px solid black;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+section.best-sellers .product-slider .product:hover .product-info button{
+    background-color: #3e50e5;
+    border: 1px solid #3e50e5;
+    color: white;
+
+}
+
+section.best-sellers .product-slider .product .price .discounted-price{
+color: red;
+}
+
+section.best-sellers .product-slider .product .price .original-price{
+    color: #9B9B9B;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+    text-decoration: line-through;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1200px) {
+    section.best-sellers .product-slider .product {
+        width: calc(50% - 16px); /* 2 colunas em telas médias */
+    }
+}
+
+@media (max-width: 768px) {
+    section.best-sellers .product-slider .product {
+        width: calc(100% - 16px); /* 1 coluna em telas pequenas */
+    }
+
+    section.best-sellers h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    section.best-sellers hr {
+        width: 50px;
+    }
+}
+
+section.newsletter{
+background-color: #ebebeb;
+max-width: 955px;
+text-align: center;
+padding: 72px 0;
+margin: 80px auto;
+}
+
+section.newsletter h3{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+
+}
+
+section.newsletter p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+section.newsletter form{
+    display: flex;
+    justify-content: center;
+
+}
+
+section.newsletter form input{
+    width: fixed(360px);
+    height: hug(49px);
+    border-radius: 30px 0 0 30px;
+    border: 1px solid black;
+    border-right: none;
+    padding: 14px 24px 14px 24px;
+    gap: 10px;
+    color: #3E3E3E;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-right: 0;
+}
+
+section.newsletter form button{
+    background-color: #5e6df5c0;
+    color: #FFFFFF;
+    width: fixed(145px);
+    height: hug(49px);
+    border: none;
+    border-radius: 0 25px 25px 0;
+    padding: 14px 10px 14px 10px;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section.newsletter form button:hover{
+    background-color: #3E50E5;
+    border: 1px solid #3E50E5;
+    color: #FFF;
+    border: 1px solid #3E3E3E;
+}
+
+footer .bottom-nav{
+    padding: 40px 0;
+    color: white;
+    background-color: #3e3e3e96;
+
+}
+
+footer .bottom-nav .container{
+    max-width: 955px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .bottom-nav ul{
+    list-style: none;
+}
+
+footer .bottom-nav ul li a{
+    color: #E0E0E0;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+footer .bottom-nav ul .list-title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 0;
+    margin-bottom: 20;
+    color: #FFF;
+    padding-bottom: 20px;
+}
+
+
+footer .copyright-text{
+    text-align: center;
+    color: white;
+    background-color: #2b2b2bb7;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+
